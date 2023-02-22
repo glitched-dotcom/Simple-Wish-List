@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wish List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>My Wish List</h1>
+
+    <form class="add-product-form">
+      <div>
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" required>
+      </div>
+      <div>
+        <label for="product-description">Product Description:</label>
+        <input type="text" id="product-description" name="product-description" required>
+      </div>
+      <div class="currency-input-container">
+        <label for="product-price">Product Price:</label>
+        <div class="currency-input">
+          <input type="number" id="product-price" name="product-price" required>
+          <select id="currency-select">
+            <option value="$">US Dollars</option>
+            <option value="£">British Pounds</option>
+            <option value="€">Euros</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <ul id="product-list"></ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
